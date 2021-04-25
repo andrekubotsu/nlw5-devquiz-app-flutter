@@ -37,7 +37,7 @@ class _HomePageState extends State<HomePage> {
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Column(children: [
             SizedBox(
-              height: 24,
+              height: 40,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -67,6 +67,7 @@ class _HomePageState extends State<HomePage> {
                                 context,
                                 MaterialPageRoute(
                                   builder: (context) => ChallengePageWidget(
+                                    title: e.title,
                                     questions: e.questions,
                                   ),
                                 ));
